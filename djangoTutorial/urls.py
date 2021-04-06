@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', include('djangoTutorialapp.urls')),
     path('', include('posts.urls')),
+    path('blog/', include('blog_app.urls')),
 
 ]

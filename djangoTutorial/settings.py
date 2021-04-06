@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog_app',
     'post2',
     'posts.apps.PostsConfig',
     'djangoTutorialapp',
