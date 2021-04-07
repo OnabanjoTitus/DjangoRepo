@@ -1,15 +1,59 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>base</title>
+<style>
+   body {
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 10px;
+}
+header {
+border-bottom: 1px solid #222222;
+margin-bottom: 0rem;
+display: flex;
+}
+header h1 a {
+color: red;
+text-decoration: none;
+}
+.nav-left {
+margin-right: auto;
+}
+.nav-right {
+display: flex;
+padding-top: 0rem;
+}
+.post-entry {
+margin-bottom: 0rem;
+}
+.post-entry h2 {
+margin: 1.0rem 0;
+}
+.post-entry h2 a,
+.post-entry h2 a:visited {
+color: blue;
+text-decoration: none;
+}
+.post-entry p {
+margin: 0;
+font-weight: 400;
+}
+.post-entry h2 a:hover {
+color: red;
+}
+
+</style>
 </head>
 <body>
 <header>
-<a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a>
-    {% block content %}
-    {% endblock content %}
-
+<h1><a href="{% url 'home' %}" id="head">Django blog</a></h1>
 </header>
+<div>
+{% block content %}
+{% endblock content %}
+</div>
+
 </body>
 </html>
