@@ -8,5 +8,5 @@ from post2.models import Post
 
 class HomePageViews(ListView):
     model = Post
-    template_name = 'posts2.html'
+    template_name = 'posts.html'
     context_object_name = 'all_posts_list'
